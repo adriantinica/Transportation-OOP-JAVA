@@ -7,15 +7,18 @@ public class App {
         ABeing cat = new Cat();
         ABeing dog  = new Dog(); 
 
-        ((Car)mercedes).fl= brother;
-        ((Car)mercedes).fr=cat;
-        ((Car)mercedes).bl= new Box();
-        ((Car)mercedes).br= dog;
+        ((Car)mercedes).fl = brother;
+        ((Car)mercedes).fr = cat;
+        ((Car)mercedes).bl = new Box();
+        //((Car)mercedes).br = dog;
 
+        System.out.println();
+
+        ((Car)mercedes).setThingToPlace("Back right", dog);
+        
+        System.out.println(((Car)mercedes).getThingFromPlace ("Back right"));
 
         System.out.println(mercedes);
-
-
 
 
     }
